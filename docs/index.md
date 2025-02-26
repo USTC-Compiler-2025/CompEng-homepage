@@ -1,4 +1,4 @@
-# `<strong>`编译工程 `</strong>`
+# 编译工程
 
 !!! Info "说明"
 
@@ -6,41 +6,42 @@
 
 <hr class="hr-my" data-content="(●′∀｀●) 我是分隔线 (●′∀｀●)">
 
-## `<strong>`课程简介`</strong>`
+## 课程简介
 
 本课程重点围绕编译器优化设计，强调适用于当代计算机（多核及嵌入式处理器）的代码生成与优化技术的一般原理和基本实现方法。本课程包括编译器概述、代码生成、并行编译器与依赖性分析、机器无关优化、指令级并行编译、并行性与局部性优化等。本课程将借助开源的编译器基础设施软件，让学生实习有关的优化设计技术。
 
-## `<strong>`课程信息`</strong>`
+## 课程信息
 
-### `<strong>`上课时间与地点`</strong>`
+### 上课时间与地点
 
     时间：1~15 周，4(6,7,8)
     地点：高新校区 GT-B109
 
-### `<strong>`联系方式`</strong>`
+### 联系方式
 
-`<strong>`教师`</strong>`
+教师
 
 - 主讲教师：徐伟 （<xuweihf@ustc.edu.cn>）
 - 主讲教师：李诚 （<chengli7@ustc.edu.cn>）
 
-`<strong>`助教 `</strong>`
+助教
 
 - 李宇哲（<lyz1810@mail.ustc.edu.cn>）
 - 刘睿博（<liuruibo21@mail.ustc.edu.cn>）
 
-`<strong>`其它`</strong>`
+其它
 
 - QQ 群：440229957
 
-## `<strong>`公告`</strong>`
+## 公告
 
 - 暂无
 
-## `<strong>`教学课件`</strong>`
+## 教学课件
 
-|    日期    |                              标题                               |                                                                         课件                                                                         |
-| :--------: | :-------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 日期 | 标题 | 课件 |
+| :--: | :--: | :--: |
+
 <!-- |    <!--    |                           2024-09-02                            |                                                                  编译原理和技术导论                                                                  | [Lecture1_Intro](ppt/Lecture1-Intro.pdf) |
 | 2024-09-04 |                            词法分析                             |                                                [Lexical-analysis](ppt/Lecture2-Lexical-analysis.pdf)                                                 |
 | 2024-09-11 |                    语法分析 - 上下文无关文法                    |                                                    [Parser-part1](ppt/Lecture3-Parser-part1.pdf)                                                     |
@@ -65,28 +66,28 @@
 | 2024-11-18 |                 机器无关代码优化 - 常见优化方法                 |                                                   [IR Opt-part1](ppt/Lecture26-IR%20Opt-part1.pdf)                                                   |
 | 2024-11-20 |             机器无关代码优化 - 数据流与到达定值分析             |                                                   [IR Opt-part2](ppt/Lecture27-IR%20Opt-part2.pdf)                                                   |
 | 2024-11-25 | 机器无关代码优化 - 可用表达式分析 & 活跃变量分析 & 基本块内优化 | [IR Opt-part3](ppt/Lecture28-IR%20Opt-part3.pdf), [IR Opt-part4](ppt/Lecture29-IR%20Opt-part4.pdf), [IR Opt-part5](ppt/Lecture30-IR%20Opt-part5.pdf) |
-| 2024-11-27 |                    流图中的循环 & 寄存器分配                    |                                     [Loop](ppt/Lecture31-Loop-part1.pdf), [Register](ppt/Lecture32-Register.pdf)                                     | -->                                      | -->
+| 2024-11-27 |                    流图中的循环 & 寄存器分配                    |                                     [Loop](ppt/Lecture31-Loop-part1.pdf), [Register](ppt/Lecture32-Register.pdf)                                     |                                      | -->
 
 <!--| 2024-11-29 |                          面向目标机器的代码优化                           |                                                                              [part1](https://rec.ustc.edu.cn/share/d6169380-9045-11ee-8a37-87201671ab8d)                                                                              |
 | 2024-12-04 |                               guest lecture                               |                                                                                                               无 slides                                                                                                               |
 | 2024-12-06 |                               guest lecture                               |                                                                                                               无 slides                                                                                                               |
 | 2024-12-13 |                                  复习课                                   |                                                                             [slides](https://rec.ustc.edu.cn/share/3a4ffcf0-995a-11ee-9fdc-a7ee4ffd604e)                                                                              | -->
 
-## `<strong>`参考资料`</strong>`
+## 参考资料
 
-### `<strong>`教材和参考书`</strong>`
+### 教材和参考书
 
-- <div id='textbook'></div>[1] 陈意云、张昱，编译原理（第 3 版），高等教育出版社，2014
+- <div id='textbook'></div> 陈意云、张昱，编译原理（第 3 版），高等教育出版社，2014
 - A. V. Aho, M. S. Lam, R. Sethi, and J. D. Ullman 著，赵建华等译，编译原理，机械工业出版社，2017
 
-### `<strong>`其他资料`</strong>`
+### 其他资料
 
 - Stanford 课程主页：[http://web.stanford.edu/class/cs143/](http://web.stanford.edu/class/cs143/)
 - MIT 课程主页：[http://6.035.scripts.mit.edu/fa18/](http://6.035.scripts.mit.edu/fa18/)
 
-## `<strong>`如何使用本文档？`</strong>`
+## 如何使用本文档？
 
-### `<strong>`关于提示框`</strong>`
+### 关于提示框
 
 为了便于标识，我们在文档中提供了若干提示框。它们有着不同的形式与作用。例如：
 
@@ -104,7 +105,7 @@
 
 !!! Example "大家可以在后续的文档中接触到它们。"
 
-### `<strong>`关于搜索`</strong>`
+### 关于搜索
 
 你可以在右上角搜索框中输入想要查询的关键词，文档会给出对应的查询结果与跳转链接。
 
