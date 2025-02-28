@@ -21,8 +21,8 @@
 
 教师
 
-- 主讲教师：徐伟 （<xuweihf@ustc.edu.cn>）
 - 主讲教师：李诚 （<chengli7@ustc.edu.cn>）
+- 主讲教师：徐伟 （<xuweihf@ustc.edu.cn>）
 
 助教
 
@@ -39,12 +39,11 @@
 
 ## 教学课件
 
-| 日期 | 标题 | 课件 |
-| :--: | :--: | :--: |
-
-<!-- |    <!--    |                           2024-09-02                            |                                                                  编译原理和技术导论                                                                  | [Lecture1_Intro](ppt/Lecture1-Intro.pdf) |
-| 2024-09-04 |                            词法分析                             |                                                [Lexical-analysis](ppt/Lecture2-Lexical-analysis.pdf)                                                 |
-| 2024-09-11 |                    语法分析 - 上下文无关文法                    |                                                    [Parser-part1](ppt/Lecture3-Parser-part1.pdf)                                                     |
+| 日期  | 标题  | 课件  |
+| :---: | :---: | :---: |
+|                           2025-02-27                            |                                                                  编译原理和技术导论                                                                  | [Lecture1_Intro](ppt/Lecture1-Intro.pdf) |
+| 2025-02-27 |                            词法分析                             |                                                [Lexical-analysis](ppt/Lecture2-Lexical-analysis.pdf)                                                 |
+<!-- | 2024-09-11 |                    语法分析 - 上下文无关文法                    |                                                    [Parser-part1](ppt/Lecture3-Parser-part1.pdf)                                                     |
 | 2024-09-14 |                 语法分析 - 自顶向下 - 递归下降                  |                                                    [Parser-part2](ppt/Lecture4-Parser-part2.pdf)                                                     |
 | 2024-09-16 |                语法分析 - 自顶向下 - LL(1) 文法                 |                                                    [Parser-part3](ppt/Lecture5-Parser-part3.pdf)                                                     |
 | 2024-09-18 |      语法分析 - 自底向上 - 移进规约 & LR 分析器的简单模型       |                             [Parser-part4](ppt/Lecture6-Parser-part4.pdf), [Parser-part5](ppt/Lecture7-Parser-part5.pdf)                             |
@@ -66,7 +65,7 @@
 | 2024-11-18 |                 机器无关代码优化 - 常见优化方法                 |                                                   [IR Opt-part1](ppt/Lecture26-IR%20Opt-part1.pdf)                                                   |
 | 2024-11-20 |             机器无关代码优化 - 数据流与到达定值分析             |                                                   [IR Opt-part2](ppt/Lecture27-IR%20Opt-part2.pdf)                                                   |
 | 2024-11-25 | 机器无关代码优化 - 可用表达式分析 & 活跃变量分析 & 基本块内优化 | [IR Opt-part3](ppt/Lecture28-IR%20Opt-part3.pdf), [IR Opt-part4](ppt/Lecture29-IR%20Opt-part4.pdf), [IR Opt-part5](ppt/Lecture30-IR%20Opt-part5.pdf) |
-| 2024-11-27 |                    流图中的循环 & 寄存器分配                    |                                     [Loop](ppt/Lecture31-Loop-part1.pdf), [Register](ppt/Lecture32-Register.pdf)                                     |                                      | -->
+| 2024-11-27 |                    流图中的循环 & 寄存器分配                    |                                     [Loop](ppt/Lecture31-Loop-part1.pdf), [Register](ppt/Lecture32-Register.pdf)                                     |-->
 
 <!--| 2024-11-29 |                          面向目标机器的代码优化                           |                                                                              [part1](https://rec.ustc.edu.cn/share/d6169380-9045-11ee-8a37-87201671ab8d)                                                                              |
 | 2024-12-04 |                               guest lecture                               |                                                                                                               无 slides                                                                                                               |
