@@ -5,7 +5,6 @@
 
 - 搭建 Ubuntu 22.04 虚拟机环境并下载本课程所需软件包
 - 测试环境配置是否成功
-- 使用 Git 维护代码版本并处理冲突
 - 了解基本的 C++ STL(标准模版库) 使用
 - 掌握大型 CMake 项目的 Debug 方法
 
@@ -13,7 +12,6 @@
 
 - [Linux 环境配置](linux.md)
 - [LLVM 等软件环境配置](software.md)
-- [Git 的使用](git.md)
 - [C++ 常见语法](cpp.md)
 - [在 CMake 构建的大型项目中如何 Debug](debug.md)
 
@@ -23,11 +21,7 @@
 
 阅读文档 [Linux 环境配置](linux.md) 和 [LLVM 等软件环境配置](software.md)，生成 Test.ll 文件。
 
-### 实验二：Git
-
-阅读文档 [Git 的使用](git.md)。
-
-### 实验三：C++ & Debug
+### 实验二：C++ & Debug
 
 阅读文档 [C++ 常见语法](cpp.md) & [在 CMake 构建的大型项目中如何 Debug](debug.md)。
 

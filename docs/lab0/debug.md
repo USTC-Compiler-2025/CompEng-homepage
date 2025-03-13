@@ -62,8 +62,8 @@ LLDB 是 LLVM 项目开发的调试器，通过设置 VSCode 扩展可以方便�
 ### 克隆需要的测试工程并构建项目
 
 ```shell
-git clone https://cscourse.ustc.edu.cn/vdir/Gitlab/compiler_staff/2024ustc-jianmu-compiler.git
-cd 2024ustc-jianmu-compiler
+git clone https://github.com/USTC-Compiler-2025/debugExample
+cd debugExample
 git checkout lab0
 mkdir build
 cd build
@@ -240,7 +240,7 @@ Human destructor called
 ??? Warning "请先拉取最新仓库"
 
     ```bash
-    # 在 2024ustc-jianmu-compiler 目录下
+    # 在 debugExample 目录下
     $ git pull
     $ cd build
     $ cmake .. -DCMAKE_BUILD_TYPE=ASAN
@@ -398,3 +398,10 @@ user@user:${ProjectDir}/build/src$ LOGV=0 ./test_logging > log
 
 然后就可以输出到文件名为 log 的文件中啦～
 
+## 实验任务
+
+通过调试这个工程文件，回答下面三个问题：
+
+1. 为什么用 main.cpp:30L 替换 main.cpp:31L 会出现报错？
+2. 为什么用 main.cpp:32L 替换 main.cpp:33L 会出现报错？
+3. 为什么取消注释 main.cpp:35-39L 不会报错，但运行会出现段错误？
