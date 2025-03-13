@@ -416,27 +416,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../git/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Git 的使用
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../cpp/" class="md-nav__link">
         
   
@@ -587,6 +566,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#实验任务" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验任务
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -713,6 +701,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#实验任务" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验任务
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -769,8 +766,8 @@
 </details>
 <p>LLDB 是 LLVM 项目开发的调试器，通过设置 VSCode 扩展可以方便地调试大型项目。下面将以一个小型工程为例：</p>
 <h3 id="克隆需要的测试工程并构建项目">克隆需要的测试工程并构建项目<a class="headerlink" href="#克隆需要的测试工程并构建项目" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://cscourse.ustc.edu.cn/vdir/Gitlab/compiler_staff/2024ustc-jianmu-compiler.git
-<span class="nb">cd</span><span class="w"> </span>2024ustc-jianmu-compiler
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/USTC-Compiler-2025/debugExample
+<span class="nb">cd</span><span class="w"> </span>debugExample
 git<span class="w"> </span>checkout<span class="w"> </span>lab0
 mkdir<span class="w"> </span>build
 <span class="nb">cd</span><span class="w"> </span>build
@@ -903,7 +900,7 @@ Human<span class="w"> </span>destructor<span class="w"> </span>called
 </details>
 <details class="warning">
 <summary>请先拉取最新仓库</summary>
-<div class="highlight"><pre><span></span><code><span class="c1"># 在 2024ustc-jianmu-compiler 目录下</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># 在 debugExample 目录下</span>
 $<span class="w"> </span>git<span class="w"> </span>pull
 $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
 $<span class="w"> </span>cmake<span class="w"> </span>..<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>ASAN
@@ -1030,6 +1027,13 @@ Shadow<span class="w"> </span>gap:<span class="w">              </span><span cla
 <div class="highlight"><pre><span></span><code>user@user:${ProjectDir}/build/src$ LOGV=0 ./test_logging &gt; log
 </code></pre></div>
 <p>然后就可以输出到文件名为 log 的文件中啦～</p>
+<h2 id="实验任务">实验任务<a class="headerlink" href="#实验任务" title="Permanent link">&para;</a></h2>
+<p>通过调试这个工程文件，回答下面三个问题：</p>
+<ol>
+<li>为什么用 main.cpp:30L 替换 main.cpp:31L 会出现报错？</li>
+<li>为什么用 main.cpp:32L 替换 main.cpp:33L 会出现报错？</li>
+<li>为什么取消注释 main.cpp:35-39L 不会报错，但运行会出现段错误？</li>
+</ol>
 
 
 
