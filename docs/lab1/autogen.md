@@ -98,7 +98,7 @@ struct {
 ### 编译
 
 ```shell
-$ cd 2024ustc-jianmu-compiler
+$ cd 2025ustc-compiler
 $ mkdir build
 $ cd build
 # 使用 cmake 生成 makefile 等文件
