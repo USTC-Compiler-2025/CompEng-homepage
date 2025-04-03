@@ -16,7 +16,7 @@
     
     
       
-        <title>重定向中，请稍后... - USTC 编译工程 2025</title>
+        <title>logging 工具使用 - USTC 编译工程 2025</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#重定向中请稍后" class="md-skip">
+        <a href="#logging-工具使用" class="md-skip">
           跳转至
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              重定向中，请稍后...
+              logging 工具使用
             
           </span>
         </div>
@@ -247,7 +247,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../lab1/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   Lab1
@@ -524,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab1/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -546,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab1/AST/" class="md-nav__link">
+      <a href="../AST/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -568,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab1/cminusf%E8%AF%AD%E4%B9%89/" class="md-nav__link">
+      <a href="../cminusf%E8%AF%AD%E4%B9%89/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -590,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab1/LightIR/" class="md-nav__link">
+      <a href="../LightIR/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -612,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab1/LightIR%20C%2B%2B/" class="md-nav__link">
+      <a href="../LightIR%20C%2B%2B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -634,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab1/visitor_pattern/" class="md-nav__link">
+      <a href="../visitor_pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -656,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab1/autogen/" class="md-nav__link">
+      <a href="../autogen/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -678,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab1/getelementptr/" class="md-nav__link">
+      <a href="../getelementptr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -720,6 +720,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#介绍" class="md-nav__link">
+    <span class="md-ellipsis">
+      介绍
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#使用" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -734,11 +760,42 @@
 
 
 
-<h1 id="重定向中请稍后">重定向中，请稍后...<a class="headerlink" href="#重定向中请稍后" title="Permanent link">&para;</a></h1>
-<script>
-// goto '../innovative-lab/'
-window.location.href='../../innovative-lab/';
-</script>
+<h1 id="logging-工具使用">logging 工具使用<a class="headerlink" href="#logging-工具使用" title="Permanent link">&para;</a></h1>
+<h2 id="介绍">介绍<a class="headerlink" href="#介绍" title="Permanent link">&para;</a></h2>
+<p>为了方便同学们在之后的实验中 debug，为大家设计了一个 C++ 简单实用的分级日志工具。该工具将日志输出信息从低到高分成四种等级：<code>DEBUG</code>，<code>INFO</code>，<code>WARNING</code>，<code>ERROR</code>。通过设定环境变量 <code>LOGV</code> 的值，来选择输出哪些等级的日志。<code>LOGV</code> 的取值是 <strong>0 到 3</strong>，分别对应到上述的 4 种级别 (<code>0:DEBUG</code>,<code>1:INFO</code>,<code>2:WARNING</code>,<code>3:ERROR</code>)。此外输出中还会包含打印该日志的代码所在位置。</p>
+<h2 id="使用">使用<a class="headerlink" href="#使用" title="Permanent link">&para;</a></h2>
+<p>项目编译好之后，可以在 <code>build</code> 目录下运行 test_logging 可执行文件，该文件的源代码在 <code>tests/test_logging.cpp</code>，用法如下：</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;logging.hpp&quot;</span>
+<span class="c1">// 引入头文件</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<span class="w">    </span><span class="n">LOG</span><span class="p">(</span><span class="n">DEBUG</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;This is DEBUG log item.&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// 使用关键字 LOG，括号中填入要输出的日志等级</span>
+<span class="w">    </span><span class="c1">// 紧接着就是&lt;&lt;以及日志的具体信息，就跟使用 std::cout 一样</span>
+<span class="w">    </span><span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;This is INFO log item&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">LOG</span><span class="p">(</span><span class="n">WARNING</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;This is WARNING log item&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">LOG</span><span class="p">(</span><span class="n">ERROR</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;This is ERROR log item&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>接着在运行该程序的时候，设定环境变量 <code>LOGV=0</code>，那么程序就会输出级别 <strong>大于等于 0</strong> 日志信息：</p>
+<div class="highlight"><pre><span></span><code>user@user:<span class="si">${</span><span class="nv">ProjectDir</span><span class="si">}</span>/build$<span class="w"> </span><span class="nv">LOGV</span><span class="o">=</span><span class="m">0</span><span class="w"> </span>./test_logging
+<span class="o">[</span>DEBUG<span class="o">]</span><span class="w"> </span><span class="o">(</span>test_logging.cpp:5L<span class="w">  </span>main<span class="o">)</span>This<span class="w"> </span>is<span class="w"> </span>DEBUG<span class="w"> </span>log<span class="w"> </span>item.
+<span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span><span class="o">(</span>test_logging.cpp:6L<span class="w">  </span>main<span class="o">)</span>This<span class="w"> </span>is<span class="w"> </span>INFO<span class="w"> </span>log<span class="w"> </span>item
+<span class="o">[</span>WARNING<span class="o">]</span><span class="w"> </span><span class="o">(</span>test_logging.cpp:7L<span class="w">  </span>main<span class="o">)</span>This<span class="w"> </span>is<span class="w"> </span>WARNING<span class="w"> </span>log<span class="w"> </span>item
+<span class="o">[</span>ERROR<span class="o">]</span><span class="w"> </span><span class="o">(</span>test_logging.cpp:8L<span class="w">  </span>main<span class="o">)</span>This<span class="w"> </span>is<span class="w"> </span>ERROR<span class="w"> </span>log<span class="w"> </span>item
+</code></pre></div>
+<p>输出中除了包含日志级别和用户想打印的信息，在圆括号中还包含了打印该信息代码的具体位置（包括文件名称、所在行、所在函数名称），可以很方便地定位到出问题的地方。</p>
+<p>假如我们觉得程序已经没有问题了，不想看那么多的 DEBUG 信息，那么我们就可以设定环境变量 <code>LOGV=1</code>，选择只看 <strong>级别大于等于 1</strong> 的日志信息：</p>
+<div class="highlight"><pre><span></span><code>user@user:<span class="si">${</span><span class="nv">ProjectDir</span><span class="si">}</span>/build$<span class="w"> </span><span class="nv">LOGV</span><span class="o">=</span><span class="m">0</span><span class="w"> </span>./test_logging
+<span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span><span class="o">(</span>test_logging.cpp:6L<span class="w">  </span>main<span class="o">)</span>This<span class="w"> </span>is<span class="w"> </span>INFO<span class="w"> </span>log<span class="w"> </span>item
+<span class="o">[</span>WARNING<span class="o">]</span><span class="w"> </span><span class="o">(</span>test_logging.cpp:7L<span class="w">  </span>main<span class="o">)</span>This<span class="w"> </span>is<span class="w"> </span>WARNING<span class="w"> </span>log<span class="w"> </span>item
+<span class="o">[</span>ERROR<span class="o">]</span><span class="w"> </span><span class="o">(</span>test_logging.cpp:8L<span class="w">  </span>main<span class="o">)</span>This<span class="w"> </span>is<span class="w"> </span>ERROR<span class="w"> </span>log<span class="w"> </span>item
+</code></pre></div>
+<p>当然 <code>LOGV</code> 值越大，日志的信息将更加简略。如果没有设定 <code>LOGV</code> 的环境变量，将默认不输出任何信息。</p>
+<p>这里再附带一个小技巧，如果日志内容多，在终端观看体验较差，可以输入以下命令将日志输出到文件中：</p>
+<div class="highlight"><pre><span></span><code>user@user:${ProjectDir}/build$ LOGV=0 ./test_logging &gt; log
+</code></pre></div>
+<p>然后就可以输出到文件名为 log 的文件中啦～</p>
 
 
 
@@ -759,7 +816,7 @@ window.location.href='../../innovative-lab/';
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年2月26日 06:25:19">2025年2月26日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年4月3日 07:23:40">2025年4月3日</span>
   </span>
 
     
