@@ -4,6 +4,10 @@
 
 本次实验需要同学们在助教提供的 Cminusf 解析器基础上，完成从语法树向中间代码的自动化翻译过程。
 
+!!! warning "Deadline"
+
+    本次实验的截止日期为 2025-04-20 23:59:59
+
 ## 实验准备
 
 请克隆 [Lab1 仓库](https://github.com/USTC-Compiler-2025/2025ustc-compiler.git)
