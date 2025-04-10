@@ -129,6 +129,7 @@ nav:
     - Lab1 简介: lab1/index.md
     - AST: lab1/AST.md
     - Cminusf 语义介绍: lab1/cminusf语义.md
+    - 词法语法解析: lab1/词法语法解析.md
     - Light IR 简介: lab1/LightIR.md
     - Light IR C++ 库: lab1/LightIR C++.md
     - 访问者模式: lab1/visitor_pattern.md
