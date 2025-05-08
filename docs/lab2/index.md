@@ -6,10 +6,9 @@
 
     本次实验的截止日期为 2025-06-08 23:59:59
 
-
 ## 同步实验仓库
 
-在进行实验之前，首先拉取[实验仓库](https://cscourse.ustc.edu.cn/vdir/Gitlab/compiler_staff/2024ustc-jianmu-compiler)的最新代码，具体步骤可以参考 [Lab2 中的指导](../lab2/index.md#实验要求)。
+在进行实验之前，首先拉取实验仓库的最新代码。
 
 本次实验仓库更新的内容如下，每个阶段的文件将在对应文档详细说明：
 
@@ -17,7 +16,7 @@
 .
 ├── ...
 ├── include
-│   ├── ...	
+│   ├── ...
 │   └── passes
 │       ├── DeadCode.hpp            # 死代码删除
 │       ├── Dominators.hpp          # 支配树分析
@@ -30,9 +29,9 @@
 │   ├── ...
 │   └── passes
 │       ├── ...
-│       ├── Dominators.cpp          
-│       ├── FuncInline.cpp          
-│       ├── ConstPropagation.cpp    
+│       ├── Dominators.cpp        
+│       ├── FuncInline.cpp        
+│       ├── ConstPropagation.cpp  
 │       └── Mem2Reg.cpp
 └── tests
     ├── ...
