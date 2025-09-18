@@ -2,7 +2,7 @@
 
 !!! Info "说明"
 
-    本课程主页为 2025 春季学期徐伟、李诚老师班《编译工程》课程主页。
+    本课程主页为 2025 秋季学期徐伟、李诚老师班《编译工程》课程主页。
 
 <hr class="hr-my" data-content="(●′∀｀●) 我是分隔线 (●′∀｀●)">
 
@@ -14,8 +14,8 @@
 
 ### 上课时间与地点
 
-    时间：1~15 周，4(6,7,8)
-    地点：高新校区 GT-B109
+    时间：2~16 周，4(3,4,5)
+    地点：高新校区 GT-B103
 
 ### 联系方式
 
@@ -26,13 +26,11 @@
 
 助教
 
-- 李宇哲（<lyz1810@mail.ustc.edu.cn>）
-- 刘睿博（<liuruibo21@mail.ustc.edu.cn>）
+- 肖同欢（<tonghuanxiao@mail.ustc.edu.cn>）
+- 王宇航（<wyh2022@mail.ustc.edu.cn>）
 
 其它
-
-- QQ 群：440229957
-
+- QQ 群：858601539
 ## 公告
 
 - 暂无
@@ -41,7 +39,8 @@
 
 |    日期    |                              标题                               |                                                                                                                                  课件                                                                                                                                  |
 | :--------: | :-------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 2025-02-27 |                       编译原理和技术导论                        |                                                                                                                [Lecture1_Intro](ppt/Lecture1-Intro.pdf)                                                                                                                |
+| 2025-09-18 |                       编译原理和技术导论                        |                                                                                                                [Lecture1_Intro](ppt/Lecture1-Intro.pdf)                                                                                                                |
+<!--
 | 2025-02-27 |                            词法分析                             |                                                                                                         [Lexical-analysis](ppt/Lecture2-Lexical-analysis.pdf)                                                                                                          |
 | 2025-03-06 |                            语法分析                             |                                       [Parser-part1](ppt/Lecture3-Parser-part1.pdf), [Parser-part2](ppt/Lecture4-Parser-part2.pdf), [Parser-part3](ppt/Lecture5-Parser-part3.pdf), [Parser-part4](ppt/Lecture6-Parser-part4.pdf)                                       |
 | 2025-03-13 |                            语法分析                             |                                                              [Parser-part5](ppt/Lecture7-Parser-part5.pdf), [Parser-part6](ppt/Lecture8-Parser-part6.pdf), [Parser-part7](ppt/Lecture9-Parser-part7.pdf)                                                               |
@@ -52,8 +51,8 @@
 | 2025-04-17 |                    机器无关代码优化&龙芯汇编                    |                                                                                           [IR-opt-part1](ppt/Lecture21-IR-opt-part1.pdf), [LA-asm](ppt/Lecture21-LA-asm.pdf)                                                                                           |
 | 2025-04-24 |                        机器无关代码优化                         |                                                     [IR-opt-part1](ppt/Lecture24-IR%20Opt-part1-v2.pdf), [IR-opt-part2](ppt/Lecture25-IR%20Opt-part2-v2.pdf), [IR-opt-part3](ppt/Lecture26-IR%20Opt-part3-v2.pdf)                                                      |
 | 2025-05-08 |                        机器无关代码优化                         |                                                                                                      [IR-opt-part4](ppt/Lecture27-IR%20Opt-part4-Mem2Reg.pdf), [IR-opt-part5](ppt/Lecture28-IR%20Opt-part5-v2.pdf)                                                                                                      |
-|                           2025-05-29                            |                                     后端代码生成与优化   | [CodeSel](ppt/Lecture29-CodeSel.pdf), [RegAlloc-part1](ppt/Lecture30-RegAlloc-part1.pdf), [RegAlloc-part2](ppt/Lecture31-RegAlloc-part2.pdf), [phi](ppt/Lecture32-phi函数接合.pdf) |
-<!--    | 2024-10-16 |     语法制导翻译 - 语法制导翻译方案 & L 属性定义的翻译方案      |                                                                           [Translation-part2](ppt/Lecture12-Translation-part2.pdf), [Translation-part3](ppt/Lecture13-Translation-part3.pdf)                                                                           |
+| 2025-05-29 |                                     后端代码生成与优化   | [CodeSel](ppt/Lecture29-CodeSel.pdf), [RegAlloc-part1](ppt/Lecture30-RegAlloc-part1.pdf), [RegAlloc-part2](ppt/Lecture31-RegAlloc-part2.pdf), [phi](ppt/Lecture32-phi函数接合.pdf) |
+| 2024-10-16 |     语法制导翻译 - 语法制导翻译方案 & L 属性定义的翻译方案      |                                                                           [Translation-part2](ppt/Lecture12-Translation-part2.pdf), [Translation-part3](ppt/Lecture13-Translation-part3.pdf)                                                                           |
 | 2024-10-21 |               语法制导翻译 - L 属性定义的翻译方案               |                                                                                                        [Translation-part4](ppt/Lecture14-Translation-part4.pdf)                                                                                                        |
 | 2024-10-23 |      中间代码翻译 - 简单语句翻译 & 控制流与布尔表达式翻译       |                                                                   [IR-Translation-part1](ppt/Lecture15-IR%20Translation-part1.pdf), [IR-Translation-part2](ppt/Lecture16-IR%20Translation-part2.pdf)                                                                   |
 | 2024-10-28 |             中间代码翻译 - 布尔表达式 & 控制流语句              |                                                                   [IR-Translation-part3](ppt/Lecture17-IR%20Translation-part3.pdf), [IR-Translation-part4](ppt/Lecture18-IR%20Translation-part4.pdf)                                                                   |
@@ -83,6 +82,7 @@
 
 - Stanford 课程主页：[http://web.stanford.edu/class/cs143/](http://web.stanford.edu/class/cs143/)
 - MIT 课程主页：[http://6.035.scripts.mit.edu/fa18/](http://6.035.scripts.mit.edu/fa18/)
+- 编译实验讲解与说明：<https://www.bilibili.com/video/BV1D7421N7c4?vd_source=95295bdf2712702f621d0ff0e737f124> 
 
 ## 如何使用本文档？
 
