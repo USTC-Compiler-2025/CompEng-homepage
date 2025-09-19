@@ -666,14 +666,13 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: center;">2025-09-18</td>
+<td style="text-align: center;">编译原理和技术导论</td>
+<td style="text-align: center;"><a href="ppt/Lecture1-Intro.pdf">Lecture1_Intro</a></td>
 </tr>
 </tbody>
 </table>
 <!--
-| 2025-02-27 |                       编译原理和技术导论                        |                                                                                                                [Lecture1_Intro](ppt/Lecture1-Intro.pdf)                                                                                                                |
 | 2025-02-27 |                            词法分析                             |                                                                                                         [Lexical-analysis](ppt/Lecture2-Lexical-analysis.pdf)                                                                                                          |
 | 2025-03-06 |                            语法分析                             |                                       [Parser-part1](ppt/Lecture3-Parser-part1.pdf), [Parser-part2](ppt/Lecture4-Parser-part2.pdf), [Parser-part3](ppt/Lecture5-Parser-part3.pdf), [Parser-part4](ppt/Lecture6-Parser-part4.pdf)                                       |
 | 2025-03-13 |                            语法分析                             |                                                              [Parser-part5](ppt/Lecture7-Parser-part5.pdf), [Parser-part6](ppt/Lecture8-Parser-part6.pdf), [Parser-part7](ppt/Lecture9-Parser-part7.pdf)                                                               |
@@ -684,9 +683,8 @@
 | 2025-04-17 |                    机器无关代码优化&龙芯汇编                    |                                                                                           [IR-opt-part1](ppt/Lecture21-IR-opt-part1.pdf), [LA-asm](ppt/Lecture21-LA-asm.pdf)                                                                                           |
 | 2025-04-24 |                        机器无关代码优化                         |                                                     [IR-opt-part1](ppt/Lecture24-IR%20Opt-part1-v2.pdf), [IR-opt-part2](ppt/Lecture25-IR%20Opt-part2-v2.pdf), [IR-opt-part3](ppt/Lecture26-IR%20Opt-part3-v2.pdf)                                                      |
 | 2025-05-08 |                        机器无关代码优化                         |                                                                                                      [IR-opt-part4](ppt/Lecture27-IR%20Opt-part4-Mem2Reg.pdf), [IR-opt-part5](ppt/Lecture28-IR%20Opt-part5-v2.pdf)                                                                                                      |
-|                           2025-05-29                            |                                     后端代码生成与优化   | [CodeSel](ppt/Lecture29-CodeSel.pdf), [RegAlloc-part1](ppt/Lecture30-RegAlloc-part1.pdf), [RegAlloc-part2](ppt/Lecture31-RegAlloc-part2.pdf), [phi](ppt/Lecture32-phi函数接合.pdf) |
--->
-<!--    | 2024-10-16 |     语法制导翻译 - 语法制导翻译方案 & L 属性定义的翻译方案      |                                                                           [Translation-part2](ppt/Lecture12-Translation-part2.pdf), [Translation-part3](ppt/Lecture13-Translation-part3.pdf)                                                                           |
+| 2025-05-29 |                                     后端代码生成与优化   | [CodeSel](ppt/Lecture29-CodeSel.pdf), [RegAlloc-part1](ppt/Lecture30-RegAlloc-part1.pdf), [RegAlloc-part2](ppt/Lecture31-RegAlloc-part2.pdf), [phi](ppt/Lecture32-phi函数接合.pdf) |
+| 2024-10-16 |     语法制导翻译 - 语法制导翻译方案 & L 属性定义的翻译方案      |                                                                           [Translation-part2](ppt/Lecture12-Translation-part2.pdf), [Translation-part3](ppt/Lecture13-Translation-part3.pdf)                                                                           |
 | 2024-10-21 |               语法制导翻译 - L 属性定义的翻译方案               |                                                                                                        [Translation-part4](ppt/Lecture14-Translation-part4.pdf)                                                                                                        |
 | 2024-10-23 |      中间代码翻译 - 简单语句翻译 & 控制流与布尔表达式翻译       |                                                                   [IR-Translation-part1](ppt/Lecture15-IR%20Translation-part1.pdf), [IR-Translation-part2](ppt/Lecture16-IR%20Translation-part2.pdf)                                                                   |
 | 2024-10-28 |             中间代码翻译 - 布尔表达式 & 控制流语句              |                                                                   [IR-Translation-part3](ppt/Lecture17-IR%20Translation-part3.pdf), [IR-Translation-part4](ppt/Lecture18-IR%20Translation-part4.pdf)                                                                   |
@@ -716,6 +714,7 @@
 <ul>
 <li>Stanford 课程主页：<a href="http://web.stanford.edu/class/cs143/">http://web.stanford.edu/class/cs143/</a></li>
 <li>MIT 课程主页：<a href="http://6.035.scripts.mit.edu/fa18/">http://6.035.scripts.mit.edu/fa18/</a></li>
+<li>编译实验讲解与说明：<a href="https://www.bilibili.com/video/BV1D7421N7c4?vd_source=95295bdf2712702f621d0ff0e737f124">https://www.bilibili.com/video/BV1D7421N7c4?vd_source=95295bdf2712702f621d0ff0e737f124</a> </li>
 </ul>
 <h2 id="如何使用本文档">如何使用本文档？<a class="headerlink" href="#如何使用本文档" title="Permanent link">¶</a></h2>
 <h3 id="关于提示框">关于提示框<a class="headerlink" href="#关于提示框" title="Permanent link">¶</a></h3>
@@ -783,7 +782,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年5月27日 09:00:30 UTC">2025年5月27日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年9月18日 13:17:45 UTC">2025年9月18日</span>
   </span>
 
     
@@ -801,7 +800,7 @@
       
         <a href="mailto:liuruibo21@mail.ustc.edu.cn">JYJSXX</a>, 
         <a href="mailto:95729892+jyjsxx@users.noreply.github.com">JYJSXX</a>, 
-        <a href="mailto:not.committed.yet">Not Committed Yet</a>
+        <a href="mailto:1002682355@qq.com">Terialion</a>
     </nav>
   </span>
 
