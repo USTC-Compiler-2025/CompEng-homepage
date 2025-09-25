@@ -55,7 +55,7 @@ sudo apt install clangd
     - CMake & CMake Tools
         ![CMakeExt](photos/CMake.png)
 
-    **安装 CMake 扩展后会弹出窗口提示选择工具包 (ToolKit)，请选择最高版本的 clang**。
+    **安装 CMake 扩展后，如果弹出窗口提示选择工具包 (ToolKit)，请选择最高版本的 clang。**
 
 LLDB 是 LLVM 项目开发的调试器，通过设置 VSCode 扩展可以方便地调试大型项目。下面将以一个小型工程为例：
 
@@ -65,6 +65,24 @@ LLDB 是 LLVM 项目开发的调试器，通过设置 VSCode 扩展可以方便�
 git clone https://github.com/USTC-Compiler-2025/debugExample
 cd debugExample
 git checkout lab0
+```
+
+
+???+ Info "设置 VSCode 打开的目录"
+	
+	点击 VSCode 左上角“文件”选项卡，选择“打开文件夹”，然后选择 `2025ustc-jianmu-compiler` 文件夹，这样 VSCode 会打开该文件夹。
+
+	在一些 VSCode 的一些设置中包含 `${workspaceFolder}` 字段，这是代表 VSCode 目前打开的文件夹的宏。VSCode 的很多扩展使用该宏作为其命令的执行目录，所以它们需要 VSCode 打开正确的文件夹才能工作。
+
+	在我们的实验中，默认打开 git 仓库所在的文件夹。
+
+
+为了确保使用 clang 进行编译，需要指定 CMake 的工具包。按 `Ctrl + Shift + P` 调出命令窗口，输入 `CMake: Select a Kit` 选择工具包，选择其中 clang 即可。若没有工具包可选，可以选择 [扫描工具包]，然后重复上述操作。
+
+
+然后在命令行进行生成
+
+```shell
 mkdir build
 cd build
 cmake ..
@@ -110,7 +128,7 @@ Human destructor called
 
 `.vscode/launch.json`文件记录了调试器需要的基本信息，它是由 vscode 自动生成的。
 
-??? Info "如何自动生成一个.json 文件"
+??? Info "如何自动生成 launch.json"
 
     点击`运行/启动调试(F5)`：
 
@@ -170,7 +188,7 @@ Human destructor called
   - type：任务类型 这是一个 lldb 任务
   - request：需要执行的任务 launch 即只有它本身
   - name：将这个任务命名为 Debug
-  - program：被调试的程序 注：_<font color=grey>${workspaceFolder} 是一个环境变量，即工程文件所在文件夹</font>_
+  - program：被调试的程序
   - args：设置需要的参数
   - cwd：指令执行的目录
 
@@ -180,7 +198,7 @@ Human destructor called
 
 读工程中的 CMakeLists.txt 文件即可得知，生成的可执行文件目录为`${workspaceFolder}/build/src/`，可执行文件名为`lab0_debug`
 
-而 main.cpp:17-20L 要求输入-t 参数，因此可以做如下修改：
+而 main.cpp:17-20L 要求输入-t 参数，因此可以做如下修改（此处修改仅作参考）：
 
 ```json
 
@@ -254,7 +272,7 @@ Human destructor called
 
     ```shell
 
-    jyjs@jyjs-virtual-machine:~/Documents/2024ustc-jianmu-compiler/build$ ./src/lab0_debug -t
+    jyjs@jyjs-virtual-machine:~/Documents/2025ustc-jianmu-compiler/build$ ./src/lab0_debug -t
     Hello, from stl_debug!
     MyMyI'mStudent object created
     Segmentation fault (core dumped)
@@ -269,37 +287,37 @@ Human destructor called
     =================================================================
     ==8882==ERROR: AddressSanitizer: heap-use-after-free on address 0x603000000040 at pc 0x59d0dfac18f8 bp 0x7fff6e82d060 sp 0x7fff6e82d050
     READ of size 8 at 0x603000000040 thread T0
-        #0 0x59d0dfac18f7 in std::_List_iterator<int>::operator++() (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x188f7)
-        #1 0x59d0dfabe9c4 in main /home/jyjs/Documents/2024ustc-jianmu-compiler/src/main.cpp:37
+        #0 0x59d0dfac18f7 in std::_List_iterator<int>::operator++() (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x188f7)
+        #1 0x59d0dfabe9c4 in main /home/jyjs/Documents/2025ustc-jianmu-compiler/src/main.cpp:37
         #2 0x7ba1e7e29d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
         #3 0x7ba1e7e29e3f in __libc_start_main_impl ../csu/libc-start.c:392
-        #4 0x59d0dfabd9c4 in _start (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x149c4)
+        #4 0x59d0dfabd9c4 in _start (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x149c4)
 
     0x603000000040 is located 0 bytes inside of 24-byte region [0x603000000040,0x603000000058)
     freed by thread T0 here:
         #0 0x7ba1e8eb724f in operator delete(void*, unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:172
-        #1 0x59d0dfac69a4 in __gnu_cxx::new_allocator<std::_List_node<int> >::deallocate(std::_List_node<int>*, unsigned long) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1d9a4)
-        #2 0x59d0dfac5a86 in std::allocator_traits<std::allocator<std::_List_node<int> > >::deallocate(std::allocator<std::_List_node<int> >&, std::_List_node<int>*, unsigned long) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1ca86)
-        #3 0x59d0dfac4827 in std::__cxx11::_List_base<int, std::allocator<int> >::_M_put_node(std::_List_node<int>*) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1b827)
-        #4 0x59d0dfac32a6 in std::__cxx11::_List_base<int, std::allocator<int> >::_M_clear() (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1a2a6)
-        #5 0x59d0dfac137c in std::__cxx11::_List_base<int, std::allocator<int> >::~_List_base() (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1837c)
-        #6 0x59d0dfabff19 in std::__cxx11::list<int, std::allocator<int> >::~list() (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x16f19)
-        #7 0x59d0dfac2059 in std::__cxx11::list<int, std::allocator<int> >::remove(int const&) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x19059)
-        #8 0x59d0dfabe9b5 in main /home/jyjs/Documents/2024ustc-jianmu-compiler/src/main.cpp:38
+        #1 0x59d0dfac69a4 in __gnu_cxx::new_allocator<std::_List_node<int> >::deallocate(std::_List_node<int>*, unsigned long) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1d9a4)
+        #2 0x59d0dfac5a86 in std::allocator_traits<std::allocator<std::_List_node<int> > >::deallocate(std::allocator<std::_List_node<int> >&, std::_List_node<int>*, unsigned long) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1ca86)
+        #3 0x59d0dfac4827 in std::__cxx11::_List_base<int, std::allocator<int> >::_M_put_node(std::_List_node<int>*) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1b827)
+        #4 0x59d0dfac32a6 in std::__cxx11::_List_base<int, std::allocator<int> >::_M_clear() (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1a2a6)
+        #5 0x59d0dfac137c in std::__cxx11::_List_base<int, std::allocator<int> >::~_List_base() (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1837c)
+        #6 0x59d0dfabff19 in std::__cxx11::list<int, std::allocator<int> >::~list() (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x16f19)
+        #7 0x59d0dfac2059 in std::__cxx11::list<int, std::allocator<int> >::remove(int const&) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x19059)
+        #8 0x59d0dfabe9b5 in main /home/jyjs/Documents/2025ustc-jianmu-compiler/src/main.cpp:38
         #9 0x7ba1e7e29d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
 
     previously allocated by thread T0 here:
         #0 0x7ba1e8eb61e7 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
-        #1 0x59d0dfac6fd3 in __gnu_cxx::new_allocator<std::_List_node<int> >::allocate(unsigned long, void const*) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1dfd3)
-        #2 0x59d0dfac69ed in std::allocator_traits<std::allocator<std::_List_node<int> > >::allocate(std::allocator<std::_List_node<int> >&, unsigned long) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1d9ed)
-        #3 0x59d0dfac5aec in std::__cxx11::_List_base<int, std::allocator<int> >::_M_get_node() (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1caec)
-        #4 0x59d0dfac4970 in std::_List_node<int>* std::__cxx11::list<int, std::allocator<int> >::_M_create_node<int>(int&&) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1b970)
-        #5 0x59d0dfac3452 in void std::__cxx11::list<int, std::allocator<int> >::_M_insert<int>(std::_List_iterator<int>, int&&) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1a452)
-        #6 0x59d0dfac14bf in std::__cxx11::list<int, std::allocator<int> >::push_back(int&&) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x184bf)
-        #7 0x59d0dfabe7d2 in main /home/jyjs/Documents/2024ustc-jianmu-compiler/src/main.cpp:36
+        #1 0x59d0dfac6fd3 in __gnu_cxx::new_allocator<std::_List_node<int> >::allocate(unsigned long, void const*) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1dfd3)
+        #2 0x59d0dfac69ed in std::allocator_traits<std::allocator<std::_List_node<int> > >::allocate(std::allocator<std::_List_node<int> >&, unsigned long) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1d9ed)
+        #3 0x59d0dfac5aec in std::__cxx11::_List_base<int, std::allocator<int> >::_M_get_node() (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1caec)
+        #4 0x59d0dfac4970 in std::_List_node<int>* std::__cxx11::list<int, std::allocator<int> >::_M_create_node<int>(int&&) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1b970)
+        #5 0x59d0dfac3452 in void std::__cxx11::list<int, std::allocator<int> >::_M_insert<int>(std::_List_iterator<int>, int&&) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1a452)
+        #6 0x59d0dfac14bf in std::__cxx11::list<int, std::allocator<int> >::push_back(int&&) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x184bf)
+        #7 0x59d0dfabe7d2 in main /home/jyjs/Documents/2025ustc-jianmu-compiler/src/main.cpp:36
         #8 0x7ba1e7e29d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
 
-    SUMMARY: AddressSanitizer: heap-use-after-free (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x188f7) in std::_List_iterator<int>::operator++()
+    SUMMARY: AddressSanitizer: heap-use-after-free (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x188f7) in std::_List_iterator<int>::operator++()
     Shadow bytes around the buggy address:
     0x0c067fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
     0x0c067fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

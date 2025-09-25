@@ -37,11 +37,11 @@
 
 ## 教学课件
 
-|    日期    |   标题   |                                                                                                                                  课件                                                                                                                                  |
-| :--------: |:------:| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 2025-09-18 | 编译工程导论 |                                                                                                                [Lecture1_Intro](ppt/Lecture1-Intro.pdf)                                                                                                                |
+|     日期     |   标题   |                                                                                                 课件                                                                                                 |
+|:----------:|:------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| 2025-09-18 | 编译工程导论 |                                                                              [Lecture1_Intro](ppt/Lecture1-Intro.pdf)                                                                              |
+| 2025-09-25 |                            词法分析-语法分析                            | [Lexical-analysis](ppt/Lecture2-Lexical-analysis.pdf), [Parser-part1](ppt/Lecture3-Parser-part1.pdf), [Parser-part2](ppt/Lecture4-Parser-part2.pdf), [Parser-part3](ppt/Lecture5-Parser-part3.pdf) |
 <!--
-| 2025-02-27 |                            词法分析                             |                                                                                                         [Lexical-analysis](ppt/Lecture2-Lexical-analysis.pdf)                                                                                                          |
 | 2025-03-06 |                            语法分析                             |                                       [Parser-part1](ppt/Lecture3-Parser-part1.pdf), [Parser-part2](ppt/Lecture4-Parser-part2.pdf), [Parser-part3](ppt/Lecture5-Parser-part3.pdf), [Parser-part4](ppt/Lecture6-Parser-part4.pdf)                                       |
 | 2025-03-13 |                            语法分析                             |                                                              [Parser-part5](ppt/Lecture7-Parser-part5.pdf), [Parser-part6](ppt/Lecture8-Parser-part6.pdf), [Parser-part7](ppt/Lecture9-Parser-part7.pdf)                                                               |
 | 2025-03-20 |                  实验 - 语言解析器与IR自动生成                  |                                                                                          [Lab1-Part1](ppt/Lecture10-lab-part1.pdf), [Lab1-Part2](ppt/Lecture10-lab-part2.pdf)                                                                                          |
@@ -82,7 +82,7 @@
 
 - Stanford 课程主页：[http://web.stanford.edu/class/cs143/](http://web.stanford.edu/class/cs143/)
 - MIT 课程主页：[http://6.035.scripts.mit.edu/fa18/](http://6.035.scripts.mit.edu/fa18/)
-- 编译实验讲解与说明：<https://www.bilibili.com/video/BV1D7421N7c4?vd_source=95295bdf2712702f621d0ff0e737f124> 
+- 编译实验讲解与说明：<https://www.bilibili.com/video/BV1D7421N7c4> 
 
 ## 如何使用本文档？
 
