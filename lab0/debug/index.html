@@ -6,6 +6,8 @@
       
       
       
+        <link rel="prev" href="../cpp/">
+      
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -13,7 +15,7 @@
     
     
       
-        <title>在 CMake 构建的大型项目中如何 Debug - USTC 编译工程 2025</title>
+        <title>如何Debug - USTC 编译工程 2025</title>
       
     
     
@@ -119,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              在 CMake 构建的大型项目中如何 Debug
+              如何Debug
             
           </span>
         </div>
@@ -225,6 +227,28 @@
   
 
       
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Lab0
+
+        </a>
+      </li>
+    
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -282,6 +306,309 @@
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Lab0
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lab0
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab0 简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux 环境配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LLVM 等软件环境配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    C++ 语法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    如何Debug
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何Debug
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clangd-语言服务器" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clangd 语言服务器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#图形化的-lldb-调试工具" class="md-nav__link">
+    <span class="md-ellipsis">
+      图形化的 LLDB 调试工具
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="图形化的 LLDB 调试工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#克隆需要的测试工程并构建项目" class="md-nav__link">
+    <span class="md-ellipsis">
+      克隆需要的测试工程并构建项目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-文件设置及-debug-示例" class="md-nav__link">
+    <span class="md-ellipsis">
+      json 文件设置及 debug 示例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#如何在-cmake-构建的大型项目中定位-segmentation-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何在 CMake 构建的大型项目中定位 Segmentation Fault
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logging-工具使用" class="md-nav__link">
+    <span class="md-ellipsis">
+      logging 工具使用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="logging 工具使用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#介绍" class="md-nav__link">
+    <span class="md-ellipsis">
+      介绍
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#使用" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#实验任务" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验任务
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -458,14 +785,23 @@
     <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../photos/codelldb.png" data-desc-position="bottom"><img alt="CodeLLDB" src="../photos/codelldb.png"></a>
 - CMake &amp; CMake Tools
     <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../photos/CMake.png" data-desc-position="bottom"><img alt="CMakeExt" src="../photos/CMake.png"></a></p>
-<p><strong>安装 CMake 扩展后会弹出窗口提示选择工具包 (ToolKit)，请选择最高版本的 clang</strong>。</p>
+<p><strong>安装 CMake 扩展后，如果弹出窗口提示选择工具包 (ToolKit)，请选择最高版本的 clang。</strong></p>
 </details>
 <p>LLDB 是 LLVM 项目开发的调试器，通过设置 VSCode 扩展可以方便地调试大型项目。下面将以一个小型工程为例：</p>
 <h3 id="克隆需要的测试工程并构建项目">克隆需要的测试工程并构建项目<a class="headerlink" href="#克隆需要的测试工程并构建项目" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/USTC-Compiler-2025/debugExample
 <span class="nb">cd</span><span class="w"> </span>debugExample
 git<span class="w"> </span>checkout<span class="w"> </span>lab0
-mkdir<span class="w"> </span>build
+</code></pre></div>
+<details class="info" open="open">
+<summary>设置 VSCode 打开的目录</summary>
+<p>点击 VSCode 左上角“文件”选项卡，选择“打开文件夹”，然后选择 <code>2025ustc-jianmu-compiler</code> 文件夹，这样 VSCode 会打开该文件夹。</p>
+<p>在一些 VSCode 的一些设置中包含 <code>${workspaceFolder}</code> 字段，这是代表 VSCode 目前打开的文件夹的宏。VSCode 的很多扩展使用该宏作为其命令的执行目录，所以它们需要 VSCode 打开正确的文件夹才能工作。</p>
+<p>在我们的实验中，默认打开 git 仓库所在的文件夹。</p>
+</details>
+<p>为了确保使用 clang 进行编译，需要指定 CMake 的工具包。按 <code>Ctrl + Shift + P</code> 调出命令窗口，输入 <code>CMake: Select a Kit</code> 选择工具包，选择其中 clang 即可。若没有工具包可选，可以选择 [扫描工具包]，然后重复上述操作。</p>
+<p>然后在命令行进行生成</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>build
 <span class="nb">cd</span><span class="w"> </span>build
 cmake<span class="w"> </span>..
 make
@@ -496,7 +832,7 @@ Human<span class="w"> </span>destructor<span class="w"> </span>called
 <h3 id="json-文件设置及-debug-示例">json 文件设置及 debug 示例<a class="headerlink" href="#json-文件设置及-debug-示例" title="Permanent link">¶</a></h3>
 <p><code>.vscode/launch.json</code>文件记录了调试器需要的基本信息，它是由 vscode 自动生成的。</p>
 <details class="info">
-<summary>如何自动生成一个.json 文件</summary>
+<summary>如何自动生成 launch.json</summary>
 <p>点击<code>运行/启动调试(F5)</code>：</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../photos/F5.png" data-desc-position="bottom"><img alt="F5" src="../photos/F5.png"></a></p>
 <p>上方提示栏弹出，选择LLDB：</p>
@@ -547,14 +883,14 @@ Human<span class="w"> </span>destructor<span class="w"> </span>called
 <li>type：任务类型 这是一个 lldb 任务</li>
 <li>request：需要执行的任务 launch 即只有它本身</li>
 <li>name：将这个任务命名为 Debug</li>
-<li>program：被调试的程序 注：<em><font color="grey">${workspaceFolder} 是一个环境变量，即工程文件所在文件夹</font></em></li>
+<li>program：被调试的程序</li>
 <li>args：设置需要的参数</li>
 <li>cwd：指令执行的目录</li>
 </ul>
 <p>主要修改 program &amp; args 域即可。</p>
 <hr>
 <p>读工程中的 CMakeLists.txt 文件即可得知，生成的可执行文件目录为<code>${workspaceFolder}/build/src/</code>，可执行文件名为<code>lab0_debug</code></p>
-<p>而 main.cpp:17-20L 要求输入-t 参数，因此可以做如下修改：</p>
+<p>而 main.cpp:17-20L 要求输入-t 参数，因此可以做如下修改（此处修改仅作参考）：</p>
 <div class="highlight"><pre><span></span><code><span class="err">...</span>
 <span class="w">    </span><span class="nt">"program"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${workspaceFolder}/build/src/lab0_debug"</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -606,7 +942,7 @@ $<span class="w"> </span>make
 <details class="info">
 <summary>ASAN 效果展示</summary>
 <p>w/o ASAN :</p>
-<div class="highlight"><pre><span></span><code>jyjs@jyjs-virtual-machine:~/Documents/2024ustc-jianmu-compiler/build$<span class="w"> </span>./src/lab0_debug<span class="w"> </span>-t
+<div class="highlight"><pre><span></span><code>jyjs@jyjs-virtual-machine:~/Documents/2025ustc-jianmu-compiler/build$<span class="w"> </span>./src/lab0_debug<span class="w"> </span>-t
 Hello,<span class="w"> </span>from<span class="w"> </span>stl_debug!
 MyMyI<span class="err">'</span>mStudent<span class="w"> </span>object<span class="w"> </span>created
 Segmentation<span class="w"> </span>fault<span class="w"> </span><span class="o">(</span>core<span class="w"> </span>dumped<span class="o">)</span>
@@ -617,37 +953,37 @@ MyMyI<span class="err">'</span>mStudent<span class="w"> </span>object<span class
 <span class="o">=================================================================</span>
 <span class="o">==</span><span class="nv">8882</span><span class="o">==</span>ERROR:<span class="w"> </span>AddressSanitizer:<span class="w"> </span>heap-use-after-free<span class="w"> </span>on<span class="w"> </span>address<span class="w"> </span>0x603000000040<span class="w"> </span>at<span class="w"> </span>pc<span class="w"> </span>0x59d0dfac18f8<span class="w"> </span>bp<span class="w"> </span>0x7fff6e82d060<span class="w"> </span>sp<span class="w"> </span>0x7fff6e82d050
 READ<span class="w"> </span>of<span class="w"> </span>size<span class="w"> </span><span class="m">8</span><span class="w"> </span>at<span class="w"> </span>0x603000000040<span class="w"> </span>thread<span class="w"> </span>T0
-<span class="w">    </span><span class="c1">#0 0x59d0dfac18f7 in std::_List_iterator&lt;int&gt;::operator++() (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x188f7)</span>
-<span class="w">    </span><span class="c1">#1 0x59d0dfabe9c4 in main /home/jyjs/Documents/2024ustc-jianmu-compiler/src/main.cpp:37</span>
+<span class="w">    </span><span class="c1">#0 0x59d0dfac18f7 in std::_List_iterator&lt;int&gt;::operator++() (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x188f7)</span>
+<span class="w">    </span><span class="c1">#1 0x59d0dfabe9c4 in main /home/jyjs/Documents/2025ustc-jianmu-compiler/src/main.cpp:37</span>
 <span class="w">    </span><span class="c1">#2 0x7ba1e7e29d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58</span>
 <span class="w">    </span><span class="c1">#3 0x7ba1e7e29e3f in __libc_start_main_impl ../csu/libc-start.c:392</span>
-<span class="w">    </span><span class="c1">#4 0x59d0dfabd9c4 in _start (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x149c4)</span>
+<span class="w">    </span><span class="c1">#4 0x59d0dfabd9c4 in _start (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x149c4)</span>
 
 0x603000000040<span class="w"> </span>is<span class="w"> </span>located<span class="w"> </span><span class="m">0</span><span class="w"> </span>bytes<span class="w"> </span>inside<span class="w"> </span>of<span class="w"> </span><span class="m">24</span>-byte<span class="w"> </span>region<span class="w"> </span><span class="o">[</span>0x603000000040,0x603000000058<span class="o">)</span>
 freed<span class="w"> </span>by<span class="w"> </span>thread<span class="w"> </span>T0<span class="w"> </span>here:
 <span class="w">    </span><span class="c1">#0 0x7ba1e8eb724f in operator delete(void*, unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:172</span>
-<span class="w">    </span><span class="c1">#1 0x59d0dfac69a4 in __gnu_cxx::new_allocator&lt;std::_List_node&lt;int&gt; &gt;::deallocate(std::_List_node&lt;int&gt;*, unsigned long) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1d9a4)</span>
-<span class="w">    </span><span class="c1">#2 0x59d0dfac5a86 in std::allocator_traits&lt;std::allocator&lt;std::_List_node&lt;int&gt; &gt; &gt;::deallocate(std::allocator&lt;std::_List_node&lt;int&gt; &gt;&amp;, std::_List_node&lt;int&gt;*, unsigned long) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1ca86)</span>
-<span class="w">    </span><span class="c1">#3 0x59d0dfac4827 in std::__cxx11::_List_base&lt;int, std::allocator&lt;int&gt; &gt;::_M_put_node(std::_List_node&lt;int&gt;*) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1b827)</span>
-<span class="w">    </span><span class="c1">#4 0x59d0dfac32a6 in std::__cxx11::_List_base&lt;int, std::allocator&lt;int&gt; &gt;::_M_clear() (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1a2a6)</span>
-<span class="w">    </span><span class="c1">#5 0x59d0dfac137c in std::__cxx11::_List_base&lt;int, std::allocator&lt;int&gt; &gt;::~_List_base() (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1837c)</span>
-<span class="w">    </span><span class="c1">#6 0x59d0dfabff19 in std::__cxx11::list&lt;int, std::allocator&lt;int&gt; &gt;::~list() (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x16f19)</span>
-<span class="w">    </span><span class="c1">#7 0x59d0dfac2059 in std::__cxx11::list&lt;int, std::allocator&lt;int&gt; &gt;::remove(int const&amp;) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x19059)</span>
-<span class="w">    </span><span class="c1">#8 0x59d0dfabe9b5 in main /home/jyjs/Documents/2024ustc-jianmu-compiler/src/main.cpp:38</span>
+<span class="w">    </span><span class="c1">#1 0x59d0dfac69a4 in __gnu_cxx::new_allocator&lt;std::_List_node&lt;int&gt; &gt;::deallocate(std::_List_node&lt;int&gt;*, unsigned long) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1d9a4)</span>
+<span class="w">    </span><span class="c1">#2 0x59d0dfac5a86 in std::allocator_traits&lt;std::allocator&lt;std::_List_node&lt;int&gt; &gt; &gt;::deallocate(std::allocator&lt;std::_List_node&lt;int&gt; &gt;&amp;, std::_List_node&lt;int&gt;*, unsigned long) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1ca86)</span>
+<span class="w">    </span><span class="c1">#3 0x59d0dfac4827 in std::__cxx11::_List_base&lt;int, std::allocator&lt;int&gt; &gt;::_M_put_node(std::_List_node&lt;int&gt;*) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1b827)</span>
+<span class="w">    </span><span class="c1">#4 0x59d0dfac32a6 in std::__cxx11::_List_base&lt;int, std::allocator&lt;int&gt; &gt;::_M_clear() (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1a2a6)</span>
+<span class="w">    </span><span class="c1">#5 0x59d0dfac137c in std::__cxx11::_List_base&lt;int, std::allocator&lt;int&gt; &gt;::~_List_base() (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1837c)</span>
+<span class="w">    </span><span class="c1">#6 0x59d0dfabff19 in std::__cxx11::list&lt;int, std::allocator&lt;int&gt; &gt;::~list() (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x16f19)</span>
+<span class="w">    </span><span class="c1">#7 0x59d0dfac2059 in std::__cxx11::list&lt;int, std::allocator&lt;int&gt; &gt;::remove(int const&amp;) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x19059)</span>
+<span class="w">    </span><span class="c1">#8 0x59d0dfabe9b5 in main /home/jyjs/Documents/2025ustc-jianmu-compiler/src/main.cpp:38</span>
 <span class="w">    </span><span class="c1">#9 0x7ba1e7e29d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58</span>
 
 previously<span class="w"> </span>allocated<span class="w"> </span>by<span class="w"> </span>thread<span class="w"> </span>T0<span class="w"> </span>here:
 <span class="w">    </span><span class="c1">#0 0x7ba1e8eb61e7 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99</span>
-<span class="w">    </span><span class="c1">#1 0x59d0dfac6fd3 in __gnu_cxx::new_allocator&lt;std::_List_node&lt;int&gt; &gt;::allocate(unsigned long, void const*) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1dfd3)</span>
-<span class="w">    </span><span class="c1">#2 0x59d0dfac69ed in std::allocator_traits&lt;std::allocator&lt;std::_List_node&lt;int&gt; &gt; &gt;::allocate(std::allocator&lt;std::_List_node&lt;int&gt; &gt;&amp;, unsigned long) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1d9ed)</span>
-<span class="w">    </span><span class="c1">#3 0x59d0dfac5aec in std::__cxx11::_List_base&lt;int, std::allocator&lt;int&gt; &gt;::_M_get_node() (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1caec)</span>
-<span class="w">    </span><span class="c1">#4 0x59d0dfac4970 in std::_List_node&lt;int&gt;* std::__cxx11::list&lt;int, std::allocator&lt;int&gt; &gt;::_M_create_node&lt;int&gt;(int&amp;&amp;) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1b970)</span>
-<span class="w">    </span><span class="c1">#5 0x59d0dfac3452 in void std::__cxx11::list&lt;int, std::allocator&lt;int&gt; &gt;::_M_insert&lt;int&gt;(std::_List_iterator&lt;int&gt;, int&amp;&amp;) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x1a452)</span>
-<span class="w">    </span><span class="c1">#6 0x59d0dfac14bf in std::__cxx11::list&lt;int, std::allocator&lt;int&gt; &gt;::push_back(int&amp;&amp;) (/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x184bf)</span>
-<span class="w">    </span><span class="c1">#7 0x59d0dfabe7d2 in main /home/jyjs/Documents/2024ustc-jianmu-compiler/src/main.cpp:36</span>
+<span class="w">    </span><span class="c1">#1 0x59d0dfac6fd3 in __gnu_cxx::new_allocator&lt;std::_List_node&lt;int&gt; &gt;::allocate(unsigned long, void const*) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1dfd3)</span>
+<span class="w">    </span><span class="c1">#2 0x59d0dfac69ed in std::allocator_traits&lt;std::allocator&lt;std::_List_node&lt;int&gt; &gt; &gt;::allocate(std::allocator&lt;std::_List_node&lt;int&gt; &gt;&amp;, unsigned long) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1d9ed)</span>
+<span class="w">    </span><span class="c1">#3 0x59d0dfac5aec in std::__cxx11::_List_base&lt;int, std::allocator&lt;int&gt; &gt;::_M_get_node() (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1caec)</span>
+<span class="w">    </span><span class="c1">#4 0x59d0dfac4970 in std::_List_node&lt;int&gt;* std::__cxx11::list&lt;int, std::allocator&lt;int&gt; &gt;::_M_create_node&lt;int&gt;(int&amp;&amp;) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1b970)</span>
+<span class="w">    </span><span class="c1">#5 0x59d0dfac3452 in void std::__cxx11::list&lt;int, std::allocator&lt;int&gt; &gt;::_M_insert&lt;int&gt;(std::_List_iterator&lt;int&gt;, int&amp;&amp;) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x1a452)</span>
+<span class="w">    </span><span class="c1">#6 0x59d0dfac14bf in std::__cxx11::list&lt;int, std::allocator&lt;int&gt; &gt;::push_back(int&amp;&amp;) (/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x184bf)</span>
+<span class="w">    </span><span class="c1">#7 0x59d0dfabe7d2 in main /home/jyjs/Documents/2025ustc-jianmu-compiler/src/main.cpp:36</span>
 <span class="w">    </span><span class="c1">#8 0x7ba1e7e29d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58</span>
 
-SUMMARY:<span class="w"> </span>AddressSanitizer:<span class="w"> </span>heap-use-after-free<span class="w"> </span><span class="o">(</span>/home/jyjs/Documents/2024ustc-jianmu-compiler/build/src/lab0_debug+0x188f7<span class="o">)</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>std::_List_iterator&lt;int&gt;::operator++<span class="o">()</span>
+SUMMARY:<span class="w"> </span>AddressSanitizer:<span class="w"> </span>heap-use-after-free<span class="w"> </span><span class="o">(</span>/home/jyjs/Documents/2025ustc-jianmu-compiler/build/src/lab0_debug+0x188f7<span class="o">)</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>std::_List_iterator&lt;int&gt;::operator++<span class="o">()</span>
 Shadow<span class="w"> </span>bytes<span class="w"> </span>around<span class="w"> </span>the<span class="w"> </span>buggy<span class="w"> </span>address:
 0x0c067fff7fb0:<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span>
 0x0c067fff7fc0:<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span>
@@ -761,12 +1097,13 @@ Shadow<span class="w"> </span>gap:<span class="w">              </span><span cla
   <span class="md-source-file__fact">
     <span class="md-icon" title="贡献者">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"></path></svg>
       
     </span>
     <nav>
       
-        <a href="mailto:liuruibo21@mail.ustc.edu.cn">JYJSXX</a>
+        <a href="mailto:liuruibo21@mail.ustc.edu.cn">JYJSXX</a>, 
+        <a href="mailto:not.committed.yet">Not Committed Yet</a>
     </nav>
   </span>
 
@@ -790,6 +1127,28 @@ Shadow<span class="w"> </span>gap:<span class="w">              </span><span cla
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚">
+        
+          
+          <a href="../cpp/" class="md-footer__link md-footer__link--prev" aria-label="上一页: C++ 语法">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                C++ 语法
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
