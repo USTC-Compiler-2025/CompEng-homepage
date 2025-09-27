@@ -70,7 +70,7 @@ git checkout lab0
 
 ???+ Info "设置 VSCode 打开的目录"
 	
-	点击 VSCode 左上角“文件”选项卡，选择“打开文件夹”，然后选择 `2025ustc-jianmu-compiler` 文件夹，这样 VSCode 会打开该文件夹。
+	点击 VSCode 左上角“文件”选项卡，选择“打开文件夹”，然后选择 `debugExample` 文件夹，这样 VSCode 会打开该文件夹。
 
 	在一些 VSCode 的一些设置中包含 `${workspaceFolder}` 字段，这是代表 VSCode 目前打开的文件夹的宏。VSCode 的很多扩展使用该宏作为其命令的执行目录，所以它们需要 VSCode 打开正确的文件夹才能工作。
 
