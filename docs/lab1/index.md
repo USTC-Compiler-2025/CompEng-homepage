@@ -6,11 +6,11 @@
 
 !!! warning "Deadline"
 
-    本次实验的截止日期为 2025-04-20 23:59:59
+    本次实验的截止日期为 2025-11-3 23:59:59
 
 ## 实验准备
 
-请克隆 [Lab1 仓库](https://github.com/USTC-Compiler-2025/2025ustc-compiler.git)
+请克隆 [Lab1 仓库](https://github.com/XiaoTonghuan/USTC-Compiler-Engineering-2025)
 
 ??? note "ZLIB 相关报错"
 
@@ -28,4 +28,4 @@
 
 ## 提交内容
 
-提交你的代码仓库链接至助教邮箱即可
+提交你的代码仓库链接至助教肖同欢邮箱(<tonghuanxiao@mail.ustc.edu.cn>)即可
