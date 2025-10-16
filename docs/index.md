@@ -34,7 +34,7 @@
 ## 公告
 
 - 2025-09-28：[Lab0](lab0/index.md) 已发布，Deadline：**2025 年 10 月 12 日**
-- 2025-10-16：[lab1](lab1/index.md) 已发布，Deadline：**2025 年 11 月 3 日**
+- 2025-10-16：[Lab1](lab1/index.md) 已发布，Deadline：**2025 年 11 月 3 日**
 
 ## 教学课件
 
