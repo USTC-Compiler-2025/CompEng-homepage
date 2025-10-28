@@ -70,7 +70,7 @@
 | 2024-12-04 |                               guest lecture                               |                                                                                                               无 slides                                                                                                               |
 | 2024-12-06 |                               guest lecture                               |                                                                                                               无 slides                                                                                                               |
 | 2024-12-13 |                                  复习课                                   |                                                                             [slides](https://rec.ustc.edu.cn/share/3a4ffcf0-995a-11ee-9fdc-a7ee4ffd604e)                                                                              | -->
-
+--!>
 ## 参考资料
 
 ### 教材和参考书
