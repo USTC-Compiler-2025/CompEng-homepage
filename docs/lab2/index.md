@@ -4,7 +4,7 @@
 
 !!! warning "Deadline"
 
-    本次实验的截止日期为 2025-06-08 23:59:59
+    **2025-11-13 23:59:59**
 
 ## 同步实验仓库
 
@@ -44,7 +44,7 @@
 
 Pass管理在main.cpp中，如果想添加或修改优化Pass顺序，可以自行修改。
 
-死代码删除和常量传播 Pass 可以参考 [PPT](../ppt/Lecture24-IR%20Opt-part1-v2.pdf)，函数内联 Pass 可以参考[这篇文章](https://zhuanlan.zhihu.com/p/395552440)。
+死代码删除和常量传播 Pass 可以参考 [PPT](../ppt/Lecture14-IR Opt-part1-v2.pdf)，函数内联 Pass 可以参考[这篇文章](https://zhuanlan.zhihu.com/p/395552440)。
 
 ## 提交方式
 
