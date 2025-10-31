@@ -46,8 +46,9 @@
 | 2025-10-09 |                            语法分析                             |                                                     [Parser-part7](ppt/Lecture10-Parser-part7.pdf), [Lab0-Part1](ppt/Lecture11-lab1-part1.pdf)                                                     |
 | 2025-10-16 |                   中间代码表示，中间代码生成                    |                                          [IR](ppt/Lecture12-IR.pdf), [Lab1-part1](ppt/Lecture13-lab-part1.pdf), [Lab1-part2](ppt/Lecture13-lab-part2.pdf)                                          | 
 | 2025-10-23 |                          机器无关代码优化                           |                      [IR-opt-part1](ppt/Lecture14-IR Opt-part1-v2.pdf), [IR-opt-part2](ppt/Lecture15-IR Opt-part2-v2.pdf), [IR-opt-part3](ppt/Lecture16-IR Opt-part3-v2.pdf)                       |
+
+| 2025-04-10 |                  机器无关代码优化2 & lab2 编译优化实验                  |               [IR-opt-part4](ppt/Lecture17-IR-Opt-part4-Mem2Reg.pdf), [IR-opt-part5](ppt/Lecture18-IR-Opt-part5-v2.pdf), [lab2-IR-opt](ppt/Lecture19-编译助教PPT-lab2(1).pdf)               |
 <!--
-| 2025-04-10 |                  实验-IR自动生成 & 运行时环境                   |               [Lab2-part1](ppt/Lecture19-lab-part1.pdf), [Lab2-part2](ppt/Lecture19-lab-part2.pdf), [Runtime-part1](ppt/Lecture20-Runtime-part1.pdf), [Runtime-part2](ppt/Lecture20-Runtime-part2.pdf), [Runtime-part3](ppt/Lecture20-Runtime-part3.pdf)               |
 | 2025-04-17 |                    机器无关代码优化&龙芯汇编                    |                                                                                           [IR-opt-part1](ppt/Lecture21-IR-opt-part1.pdf), [LA-asm](ppt/Lecture21-LA-asm.pdf)                                                                                           |
 | 2025-04-24 |                        机器无关代码优化                         |                                                     [IR-opt-part1](ppt/Lecture24-IR%20Opt-part1-v2.pdf), [IR-opt-part2](ppt/Lecture25-IR%20Opt-part2-v2.pdf), [IR-opt-part3](ppt/Lecture26-IR%20Opt-part3-v2.pdf)                                                      |
 | 2025-05-08 |                        机器无关代码优化                         |                                                                                                      [IR-opt-part4](ppt/Lecture27-IR%20Opt-part4-Mem2Reg.pdf), [IR-opt-part5](ppt/Lecture28-IR%20Opt-part5-v2.pdf)                                                                                                      |
@@ -70,7 +71,7 @@
 | 2024-12-04 |                               guest lecture                               |                                                                                                               无 slides                                                                                                               |
 | 2024-12-06 |                               guest lecture                               |                                                                                                               无 slides                                                                                                               |
 | 2024-12-13 |                                  复习课                                   |                                                                             [slides](https://rec.ustc.edu.cn/share/3a4ffcf0-995a-11ee-9fdc-a7ee4ffd604e)                                                                              | -->
---!>
+<!-- --!> -->
 ## 参考资料
 
 ### 教材和参考书
