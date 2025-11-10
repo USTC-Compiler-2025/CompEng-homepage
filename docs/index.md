@@ -66,12 +66,11 @@
 | 2024-11-20 |             机器无关代码优化 - 数据流与到达定值分析             |                                                                                                            [IR Opt-part2](ppt/Lecture27-IR%20Opt-part2.pdf)                                                                                                            |
 | 2024-11-25 | 机器无关代码优化 - 可用表达式分析 & 活跃变量分析 & 基本块内优化 |                                                          [IR Opt-part3](ppt/Lecture28-IR%20Opt-part3.pdf), [IR Opt-part4](ppt/Lecture29-IR%20Opt-part4.pdf), [IR Opt-part5](ppt/Lecture30-IR%20Opt-part5.pdf)                                                          |
 | 2024-11-27 |                    流图中的循环 & 寄存器分配                    |                                                                                              [Loop](ppt/Lecture31-Loop-part1.pdf), [Register](ppt/Lecture32-Register.pdf)                                                                                              | -->                                                                                                                |
-
-<!--| 2024-11-29 |                          面向目标机器的代码优化                           |                                                                              [part1](https://rec.ustc.edu.cn/share/d6169380-9045-11ee-8a37-87201671ab8d)                                                                              |
+| 2024-11-29 |                          面向目标机器的代码优化                           |                                                                              [part1](https://rec.ustc.edu.cn/share/d6169380-9045-11ee-8a37-87201671ab8d)                                                                              |
 | 2024-12-04 |                               guest lecture                               |                                                                                                               无 slides                                                                                                               |
 | 2024-12-06 |                               guest lecture                               |                                                                                                               无 slides                                                                                                               |
 | 2024-12-13 |                                  复习课                                   |                                                                             [slides](https://rec.ustc.edu.cn/share/3a4ffcf0-995a-11ee-9fdc-a7ee4ffd604e)                                                                              | -->
-<!-- --!> -->
+-->
 ## 参考资料
 
 ### 教材和参考书
